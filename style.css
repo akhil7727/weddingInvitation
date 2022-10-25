@@ -1,13 +1,24 @@
+:root {
+    --light: #14213D;
+    --subLight: #e5e5e5;
+    --dark: #fca311;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FFF5E4;
-    color: #850E35;
+    /* background-color: var(--subLight); */
+    /* color: var(--light); */
     /* color: red; */
 }
 
 body {
+    /* background-image: url("./WhatsApp\ Image\ 2022-09-28\ at\ 5.25.04\ PM.jpeg"); */
+    background-image: url("./v708-aum-24-b-diwali.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -27,7 +38,7 @@ body {
 
 .image {
     width: 90%;
-    outline: 5px solid #850E35;
+    outline: 5px solid var(--dark);
     aspect-ratio: 16/9;
     border-radius: 10px;
     object-fit: cover;
@@ -53,9 +64,9 @@ body {
 .div-heading {
     width: 100%;
     text-align: center;
-    padding: 3px 0;
-    background-color: #850E35;
-    color: #FFF5E4;
+    padding: 6px 0;
+    background-color: var(--dark);
+    color: var(--light);
 
 }
 
@@ -64,14 +75,26 @@ body {
     display: flex;
     justify-content: space-between;
     /* background-color: pink; */
-    background-color: #FFC4C4;
-    border-bottom: 2px solid white;
+    background-color: var(--light);
+    border-bottom: 2px solid var(--subLight);
     /* margin: 1px 12px; */
-    padding: 1px 12px;
+    padding: 1px 18px;
+}
+
+.event-dates-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light);
+    color: var(--subLight);
+}
+
+.event-dates-item-subdata {
+    color: var(--subLight);
+    font-size: 0.75rem;
 }
 
 span {
-    background-color: #FFC4C4;
+    background-color: var(--light);
 }
 
 .names {
@@ -87,7 +110,7 @@ span {
 .video {
     font-family: 'Quicksand', sans-serif;
     margin: 1rem;
-    background-color: #850E35;
+    background-color: var(--dark);
     width: 90%;
     border-radius: 10px;
     overflow: hidden;
@@ -100,8 +123,8 @@ span {
 }
 
 .video-heading {
-    background-color: #850E35;
-    color: #FFF5E4;
+    background-color: var(--dark);
+    color: var(--subLight);
     padding: 6px;
     font-weight: 500;
     font-size: 1.35rem;
@@ -130,8 +153,8 @@ span {
 
 .quote {
     width: 90%;
-    background-color: #850E35;
-    color: #FFF5E4;
+    background-color: var(--dark);
+    color: var(--subLight);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -151,17 +174,69 @@ span {
 }
 
 .quote-msg {
-    background-color: #850E35;
-    color: #FFF5E4;
+    background-color: var(--dark);
+    color: var(--subLight);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .quote-symbol {
-    background-color: #850E35;
-    color: #FFF5E4;
+    background-color: var(--dark);
+    color: var(--subLight);
     font-size: 2rem;
 }
 
+.contact {
+    width: 90%;
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid var(--dark);
+    border-radius: 20px;
+    padding: 8px 24px;
+}
+
+.contact-pin {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contact-heading {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-item {
+    font-size: 1rem;
+    color: var(--light);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-us {
+    background-color: rgba(1, 8, 54, 0.5);
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--subLight);
+    font-weight: 400;
+    width: 100%;
+    /* border-radius: 20px; */
+    padding: 1rem;
+}
+
+.contact-us-name {
+    background-color: transparent;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* .contact-item */
 /* .quote {
     width: 90%;
     background-color: beige;
