@@ -141,7 +141,7 @@ span {
 .information {
     width: 90%;
     font-size: 1.6rem;
-    margin: 2rem 0;
+    margin: 1rem 0 3rem 0;
     text-align: center;
     font-family: 'Cookie', cursive;
     text-transform: capitalize;
