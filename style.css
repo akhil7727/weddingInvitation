@@ -1,7 +1,8 @@
 :root {
-    --light: #14213D;
+    --light: #eedec5;
     --subLight: #e5e5e5;
-    --dark: #fca311;
+    --dark: #836539;
+    --text: #64553d;
 }
 
 * {
@@ -64,6 +65,7 @@ body {
 .div-heading {
     width: 100%;
     text-align: center;
+    font-weight: 600;
     padding: 6px 0;
     background-color: var(--dark);
     color: var(--light);
@@ -76,7 +78,8 @@ body {
     justify-content: space-between;
     /* background-color: pink; */
     background-color: var(--light);
-    border-bottom: 2px solid var(--subLight);
+    /* border-bottom: 2px solid var(--subLight); */
+    margin-top: 2px;
     /* margin: 1px 12px; */
     padding: 1px 18px;
 }
@@ -134,7 +137,7 @@ span {
 .information {
     width: 90%;
     font-size: 1.6rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-align: center;
     font-family: 'Cookie', cursive;
     text-transform: capitalize;
@@ -162,15 +165,18 @@ span {
     padding: 0 6px;
     margin: 2rem;
     align-items: center;
+    box-shadow: 2px 10px 46px -10px rgba(0, 0, 0, 0.93);
 }
 
 .quote-image {
     position: relative;
-    max-width: 70px;
-    margin-top: -35px;
-    height: 70px;
+    max-width: 120px;
+    margin-top: -66px;
+    height: 101px;
+    object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
+    box-shadow: 2px 10px 46px -10px rgba(0, 0, 0, 0.93);
 }
 
 .quote-msg {
@@ -234,6 +240,12 @@ a {
     background-color: transparent;
     font-size: 1.8rem;
     font-weight: 500;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
 }
 
 /* .contact-item */
